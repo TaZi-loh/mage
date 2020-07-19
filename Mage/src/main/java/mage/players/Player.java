@@ -501,6 +501,11 @@ public interface Player extends MageItem, Copyable<Player> {
 
     void setResponseManaType(UUID manaTypePlayerId, ManaType responseManaType);
 
+    /**
+     * this handles what happens if the player gets priority
+     * @param game
+     * @return if the player did any action
+     */
     boolean priority(Game game);
 
     boolean choose(Outcome outcome, Target target, UUID sourceId, Game game);

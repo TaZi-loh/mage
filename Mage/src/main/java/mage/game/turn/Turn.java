@@ -92,6 +92,7 @@ public class Turn implements Serializable {
     }
 
     /**
+     * This method covers how a turn is played
      * @param game
      * @param activePlayer
      * @return true if turn is skipped

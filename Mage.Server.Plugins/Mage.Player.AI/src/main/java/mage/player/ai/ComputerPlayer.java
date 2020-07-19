@@ -109,6 +109,7 @@ public class ComputerPlayer extends PlayerImpl implements Player {
 
     @Override
     public boolean chooseMulligan(Game game) {
+        // keep any 5 or any hand with 2 to handsize - 2 lands
         log.debug("chooseMulligan");
         if (hand.size() < 6
                 || isTestMode()

@@ -39,6 +39,11 @@ public class ComputerPlayer7 extends ComputerPlayer6 {
         return result;
     }
 
+    /**
+     * this handles what the AI does when it has priority
+     * @param game
+     * @return
+     */
     private boolean priorityPlay(Game game) {
         if (lastLoggedTurn != game.getTurnNum()) {
             lastLoggedTurn = game.getTurnNum();

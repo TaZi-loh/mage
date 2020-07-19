@@ -769,6 +769,7 @@ public abstract class GameImpl implements Game, Serializable {
         }
     }
 
+    // Main game loop !
     protected void play(UUID nextPlayerId) {
         if (!isPaused() && !checkIfGameIsOver()) {
             playerList = state.getPlayerList(nextPlayerId);
@@ -1037,7 +1038,7 @@ public abstract class GameImpl implements Game, Serializable {
         getState().setChoosingPlayerId(null);
         state.resetWatchers(); // watcher objects from cards are reused during match so reset all card watchers already added
 
-        //20100716 - 103.5
+        //20100716 - 103.5  opening actions of cards
         for (UUID playerId : state.getPlayerList(startingPlayerId)) {
             Player player = getPlayer(playerId);
             Cards cardsWithOpeningAction = new CardsImpl();
@@ -1343,7 +1344,7 @@ public abstract class GameImpl implements Game, Serializable {
                         }
                         if (allPassed()) {
                             if (!state.getStack().isEmpty()) {
-                                //20091005 - 115.4
+                                //20091005 - 117.4
                                 resolve();
                                 checkConcede();
                                 applyEffects();

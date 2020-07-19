@@ -36,6 +36,7 @@ public class PreCombatMainStep extends Step {
     @Override
     public void beginStep(Game game, UUID activePlayerId) {
         super.beginStep(game, activePlayerId);
+        // 714.3b
         for (Permanent saga : game.getBattlefield().getAllActivePermanents(filter, activePlayerId, game)) {
             if (saga != null) {
                 saga.addCounters(CounterType.LORE.createInstance(), null, game);
