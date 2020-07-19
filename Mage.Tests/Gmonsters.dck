@@ -1,0 +1,18 @@
+2 [WAR:169] Nissa, Who Shakes the World
+4 [M20:165] Barkhide Troll
+2 [GRN:136] Kraul Harpooner
+4 [ELD:165] Lovestruck Beast
+4 [GRN:141] Pelt Collector
+4 [ELD:171] Questing Beast
+4 [M14:195] Scavenging Ooze
+4 [ELD:235] Stonecoil Serpent
+4 [M21:197] Primal Might
+2 [ELD:161] The Great Henge
+2 [ELD:240] Castle Garenbrig
+22 [IKO:272] Forest
+SB: 2 [M21:179] Elder Gargaroth
+SB: 4 [ELD:167] Oakhame Adversary
+SB: 4 [IKO:170] Ram Through
+SB: 3 [M15:193] Ranger's Guile
+LAYOUT MAIN:(1,1)(NONE,false,50)|([WAR:169],[WAR:169],[M20:165],[M20:165],[M20:165],[M20:165],[GRN:136],[GRN:136],[ELD:165],[ELD:165],[ELD:165],[ELD:165],[GRN:141],[GRN:141],[GRN:141],[GRN:141],[ELD:171],[ELD:171],[ELD:171],[ELD:171],[M14:195],[M14:195],[M14:195],[M14:195],[ELD:235],[ELD:235],[ELD:235],[ELD:235],[M21:197],[M21:197],[M21:197],[M21:197],[ELD:161],[ELD:161],[ELD:240],[ELD:240],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272],[IKO:272])
+LAYOUT SIDEBOARD:(1,1)(NONE,false,50)|([M21:179],[M21:179],[ELD:167],[ELD:167],[ELD:167],[ELD:167],[IKO:170],[IKO:170],[IKO:170],[IKO:170],[M15:193],[M15:193],[M15:193])

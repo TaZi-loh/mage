@@ -1,0 +1,20 @@
+4 [THB:125] Anax, Hardened in the Forge
+4 [ELD:115] Bonecrusher Giant
+4 [ELD:239] Castle Embereth
+4 [ELD:124] Fervent Champion
+4 [RNA:107] Light Up the Stage
+17 [IKO:269] Mountain
+3 [ELD:147] Torbran, Thane of Red Fell
+4 [M20:159] Scorch Spitter
+4 [M20:160] Shock
+4 [ELD:120] Embercleave
+4 [GRN:115] Runaway Steam-Kin
+4 [ELD:138] Robber of the Rich
+SB: 2 [THB:237] Soul-Guide Lantern
+SB: 4 [M20:126] Chandra, Acolyte of Flame
+SB: 2 [THB:143] Irreverent Revelers
+SB: 3 [ELD:135] Redcap Melee
+SB: 2 [WAR:146] Tibalt, Rakish Instigator
+SB: 2 [ELD:139] Scorching Dragonfire
+LAYOUT MAIN:(1,1)(NONE,false,50)|([THB:125],[THB:125],[THB:125],[THB:125],[ELD:115],[ELD:115],[ELD:115],[ELD:115],[ELD:239],[ELD:239],[ELD:239],[ELD:239],[ELD:124],[ELD:124],[ELD:124],[ELD:124],[RNA:107],[RNA:107],[RNA:107],[RNA:107],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[IKO:269],[ELD:147],[ELD:147],[ELD:147],[M20:159],[M20:159],[M20:159],[M20:159],[M20:160],[M20:160],[M20:160],[M20:160],[ELD:120],[ELD:120],[ELD:120],[ELD:120],[GRN:115],[GRN:115],[GRN:115],[GRN:115],[ELD:138],[ELD:138],[ELD:138],[ELD:138])
+LAYOUT SIDEBOARD:(1,1)(NONE,false,50)|([THB:237],[THB:237],[M20:126],[M20:126],[M20:126],[M20:126],[THB:143],[THB:143],[ELD:135],[ELD:135],[ELD:135],[WAR:146],[WAR:146],[ELD:139],[ELD:139])

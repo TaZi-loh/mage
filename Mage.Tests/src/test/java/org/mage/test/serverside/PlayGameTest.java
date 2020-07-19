@@ -3,6 +3,7 @@ package org.mage.test.serverside;
 import mage.cards.Card;
 import mage.cards.Sets;
 import mage.cards.decks.Deck;
+import mage.cards.decks.importer.DeckImporter;
 import mage.constants.ColoredManaSymbol;
 import mage.constants.MultiplayerAttackOption;
 import mage.constants.RangeOfInfluence;
@@ -33,15 +34,16 @@ public class PlayGameTest extends MageTestBase {
     private static final List<String> colorChoices = new ArrayList<>(Arrays.asList("bu", "bg", "br", "bw", "ug", "ur", "uw", "gr", "gw", "rw", "bur", "buw", "bug", "brg", "brw", "bgw", "wur", "wug", "wrg", "rgu"));
     private static final int DECK_SIZE = 40;
 
-    @Ignore
+//    @Ignore
     @Test
     public void playOneGame() throws GameException, FileNotFoundException, IllegalArgumentException {
         Game game = new TwoPlayerDuel(MultiplayerAttackOption.LEFT, RangeOfInfluence.ALL, MulliganType.GAME_DEFAULT.getMulligan(0), 20);
 
-        Player computerA = createPlayer("ComputerA", PlayerType.COMPUTER_MINIMAX_HYBRID);
-//        Player playerA = createPlayer("ComputerA", "Computer - mad");
-//        Deck deck = Deck.load(Sets.loadDeck("RB Aggro.dck"));
-        Deck deck = generateRandomDeck();
+//        Player computerA = createPlayer("ComputerA - Green", PlayerType.COMPUTER_MINIMAX_HYBRID);
+//        Player computerA = createPlayer("ComputerA - Green", PlayerType.COMPUTER_MAD);
+        Player computerA = createPlayer("ComputerA - Green", PlayerType.COMPUTER_MONTE_CARLO);
+        Deck deck = Deck.load(DeckImporter.importDeckFromFile("Gmonsters.dck"), false, false);
+//        Deck deck = generateRandomDeck();
 
         if (deck.getCards().size() < DECK_SIZE) {
             throw new IllegalArgumentException("Couldn't load deck, deck size = " + deck.getCards().size() + ", but must be " + DECK_SIZE);
@@ -49,10 +51,11 @@ public class PlayGameTest extends MageTestBase {
         game.addPlayer(computerA, deck);
         game.loadCards(deck.getCards(), computerA.getId());
 
-        Player computerB = createPlayer("ComputerB", PlayerType.COMPUTER_MINIMAX_HYBRID);
-//        Player playerB = createPlayer("ComputerB", "Computer - mad");
-//        Deck deck2 = Deck.load(Sets.loadDeck("RB Aggro.dck"));
-        Deck deck2 = generateRandomDeck();
+//        Player computerB = createPlayer("ComputerB - Red", PlayerType.COMPUTER_MINIMAX_HYBRID);
+//        Player computerB = createPlayer("ComputerB - Red", PlayerType.COMPUTER_MAD);
+        Player computerB = createPlayer("ComputerB - Red", PlayerType.COMPUTER_MONTE_CARLO);
+        Deck deck2 = Deck.load(DeckImporter.importDeckFromFile("RDW.dck"), false, false);
+//        Deck deck2 = generateRandomDeck();
         if (deck2.getCards().size() < DECK_SIZE) {
             throw new IllegalArgumentException("Couldn't load deck, deck size = " + deck2.getCards().size() + ", but must be " + DECK_SIZE);
         }
@@ -64,12 +67,12 @@ public class PlayGameTest extends MageTestBase {
 //        game.cheat(playerA.getId(), libraryCardsA, handCardsA, battlefieldCardsA, graveyardCardsA);
 //        game.cheat(playerB.getId(), commandsB);
 //        game.cheat(playerB.getId(), libraryCardsB, handCardsB, battlefieldCardsB, graveyardCardsB);
-        //boolean testMode = false;
-        boolean testMode = true;
+        boolean testMode = false;
+//        boolean testMode = true;
 
         long t1 = System.nanoTime();
         GameOptions options = new GameOptions();
-        options.testMode = true;
+        options.testMode = false;
         game.setGameOptions(options);
         game.start(computerA.getId());
         long t2 = System.nanoTime();
